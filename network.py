@@ -17,7 +17,7 @@ class Network:
   def __init__(self, input_layer_size, hidden_layer_size, output_layer_size):
 
     # console output
-    print("An AI has been randomly generated.")
+    print("\nA new AI has been randomly generated for testing.\n")
     
     ### VARIABLES ###
 
