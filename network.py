@@ -15,6 +15,9 @@ from geometry import *
 class Network:
 
   def __init__(self, input_layer_size, hidden_layer_size, output_layer_size):
+
+    # console output
+    print("An AI has been randomly generated.")
     
     ### VARIABLES ###
 
@@ -45,6 +48,9 @@ class Network:
 
 
   def Predict(self, input_values):
+
+    # console output
+    print("A prediction has been made by an AI.")
     
     # empty nodes before making a prediction
     self.EmptyNodes()
@@ -89,6 +95,9 @@ class Network:
   
 
   def Error(self, inputs, target):
+
+    # console output
+    print("The error of an AI's answer has been tested.")
 
     # find how close to the target the network was
     guess = self.Predict(inputs)

@@ -10,6 +10,9 @@ for i in range(exam_length):
 
 def Fitness(network):
 
+  # console output
+  print("The fitness of an AI has been tested.")
+
   total_error = 0
 
   for question in exam:
