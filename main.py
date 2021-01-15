@@ -20,7 +20,7 @@ window and tab setup
 '''
 window = Tk()
 window.geometry("800x640")
-window.title("Unamridge Neural Network VERSION 1.0")
+window.title("Visual Neural Network VERSION 1.0")
 tab_control = ttk.Notebook(window)
 tab1 = ttk.Frame(tab_control)
 tab2 = ttk.Frame(tab_control)
@@ -52,7 +52,7 @@ def Reset():
 
   canvas.delete("all")
   mainNetwork.Display(canvas, 15)
-  
+
 
 '''
 TRAIN FUNCTION
@@ -64,7 +64,7 @@ def Train():
   current_best = Fitness(mainNetwork)
 
   newNetwork = Network(2, len(mainNetwork.hidden_nodes), 1)
-  
+
   while Fitness(newNetwork) < current_best:
     newNetwork = Network(2, len(mainNetwork.hidden_nodes), 1)
 
@@ -117,4 +117,3 @@ main loop of the window
 '''
 tab_control.pack(expand=1, fill='both')
 window.mainloop()
-
